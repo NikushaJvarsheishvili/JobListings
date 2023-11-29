@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+:root {
+  --primary: hsl(180, 29%, 50%);
+  --bg: hsl(180, 52%, 96%);
+  --secondary: hsl(180, 8%, 52%);
+  --secondary-dark: hsl(180, 14%, 20%);
+  --foreground: hsl(180, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--bg);
+}
+
+.container {
+  max-width: 60rem;
+  /* margin: 0 auto; */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  /* margin-top/bottom  margin-left/right */
+  margin: 32px auto;
+}
+
+.bullet-symbol {
+  color: var(--secondary);
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.listing-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px;
+  column-gap: 16px;
+  border-radius: 4px;
+  box-shadow: 0px 15px 20px -5px hsla(189, 82%, 28%, 0.15);
+}
+
+.company-name {
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+.listing-title {
+  margin: 0.8rem 0;
+}
+
+.listing-details {
+  display: flex;
+  list-style: none;
+  column-gap: 16px;
+  padding: 0;
+}
+
+.listing-details li {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.company-img {
+  width: 80px;
+}
+.filter-container {
+  position: sticky;
+  border-radius: 5px;
+  height: 72px;
+  transform: translate(0, -50%);
+  top: 37px;
+  background: #ffffff;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+ 
+}
+.filter-button {
+    border: none;
+    cursor: pointer;
+    padding: 7px 9px;
+    border-radius: 3px;
+    color: var(--primary);
+    background-color: var(--bg);
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+.filter-button:hover {
+  border-bottom: 1px solid rgba(238, 67, 67, 0.754);
+  color: red;
+  transition: all 0.3s;
+}
+.btn {
+  border: 1px solid red;
+}
+.clear {
+  position: relative;
+  left: 87%;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--primary);
+  background: transparent;
+  border: none;
+}
+.filter-btn-side {
+  display: flex;
+  width: 90%;
+  overflow: auto;
+  gap: 15px;
+  padding: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+  background: hsl(180, 24%, 42%);
+} 
+
+@media screen and (max-width: 870px) {
+  
+}
+@media screen and (max-width: 748px) {
+ 
+}
+@media screen and (max-width: 640px) {
+  
+}
+@media screen and (max-width: 535px) {
+
+}

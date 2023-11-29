@@ -1,0 +1,219 @@
+.badge-container {
+  display: flex;
+  column-gap: 8px;
+}
+
+.badge-container span {
+  display: inline-block;
+  color: var(--foreground);
+  padding: 5px 7px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.new-badge {
+  background-color: var(--primary);
+}
+
+.featured-badge {
+  background-color: var(--secondary-dark);
+}
+
+.details-first-row {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 0.9rem;
+}
+
+.company-img {
+  border-radius: 50%;
+}
+
+.tag-buttons-container {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.tag-buttons  {
+  border: none;
+  cursor: pointer;
+  padding: 7px 9px;
+  border-radius: 3px;
+  color: var(--primary);
+  background-color: var(--bg);
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.tag-buttons:hover {
+  background-color: var(--primary);
+  color: white;
+  transition: all 0.3s;
+}
+.active {
+  border-bottom: 2px solid var(--primary);
+}
+.listing-card {
+  border-left: 5px solid transparent;
+}
+
+.featured-listing {
+  border-color: var(--primary);
+}
+
+.company-name {
+  margin: 0;
+}
+
+@media screen and (max-width: 870px) {
+  .tag-buttons {
+    font-size: 0.8rem;
+    padding: 5px 7px;
+  }
+  .company-name {
+    font-size: 0.9rem;
+  }
+  .badge-container span {
+    font-size: 0.7rem;
+    padding: 3px 5px;
+  }
+  .listing-title {
+    font-size: 1rem;
+  }
+  .listing-details li {
+    font-size: 0.8rem;
+  }
+  .listing-card {
+    height: 7rem;
+    padding: 10px;
+  }
+  .company-img {
+    width: 70px;
+  }
+  .filter-button:hover {
+    border: none;
+    color: var(--primary);
+  }
+  .filter-button {
+    font-size: 0.8rem;
+    padding: 5px 7px;
+  }
+  .filter-container {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 748px) {
+  .tag-buttons {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+  }
+  .company-name {
+    font-size: 0.8rem;
+  }
+  .badge-container span {
+    font-size: 0.6rem;
+    padding: 2px 4px;
+  }
+  .listing-title {
+    font-size: 0.9rem;
+  }
+  .listing-details li {
+    font-size: 0.7rem;
+  }
+  .listing-card {
+    height: 6.8rem;
+    padding: 10px;
+  }
+  .company-img {
+    width: 65px;
+  }
+  .filter-button:hover {
+    border: none;
+    color: var(--primary);
+  }
+  .clear {
+    transform: translate(-22px);
+  }
+}
+@media screen and (max-width: 640px) {
+  .tag-buttons {
+    font-size: 0.6rem;
+    padding: 3px 5px;
+  }
+  .company-name {
+    font-size: 0.7rem;
+  }
+  .badge-container span {
+    font-size: 0.5rem;
+    padding: 2px 4px;
+  }
+  .listing-title {
+    font-size: 0.8rem;
+  }
+  .listing-details li {
+    font-size: 0.5rem;
+  }
+  .listing-card {
+    height: 6.4rem;
+    padding: 10px;
+  }
+  .company-img {
+    width: 60px;
+  }
+  .filter-button:hover {
+    border: none;
+    color: var(--primary);
+  }
+  .clear {
+    transform: translate(-22px);
+  }
+  .filter-button {
+    font-size: 0.6rem;
+    padding: 4px 5px;
+  }
+  .filter-container {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .tag-buttons {
+    font-size: 0.4rem;
+    padding: 3px 5px;
+  }
+  .company-name {
+    font-size: 0.7rem;
+  }
+  .badge-container span {
+    font-size: 0.5rem;
+    padding: 2px 4px;
+  }
+  .bullet-symbol {
+    font-size: 10px;
+  }
+  .listing-title {
+    font-size: 0.8rem;
+  }
+  .listing-details li {
+    font-size: 0.5rem;
+  }
+  .listing-card {
+    height: 5.8rem;
+    padding: 10px;
+  }
+  .company-img {
+    width: 60px;
+  }
+  .filter-button:hover {
+    border: none;
+    color: var(--primary);
+  }
+  .clear {
+    transform: translate(-30px);
+  }
+}
